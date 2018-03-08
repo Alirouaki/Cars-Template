@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+   max-width: 1140px;
+   margin: 0 auto;
+   margin-left: 86px;
+   margin-top: 10px;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("http://cdn.pinthiscars.com/images/nissan-skyline-tuning--18.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    line-height: 1.2em;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-shadow: 2px 2px 20px #000000;
+    animation: fadeAndScale .2s ease-in;
+}
+
+
+/****** Responsive NavBar ******/
+
+
+nav ul {
+	display: flex; 
+	flex-wrap: wrap; 
+	max-width: 1080px; 
+	margin: 0 auto;		
+    background: transparent;
+}
+nav ul,
+nav li {
+	flex: 1;
+    list-style: none;
+}
+nav li:last-child {
+   border-bottom: none;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 25px;
+}
+nav a:hover {
+	color: grey;
+    border-bottom: 2px solid grey;
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+}
+nav li {
+	position: relative;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+}  
+nav input,
+nav label {
+	display: none;
+	width: 36px; 
+	height: 36px; 
+	background: #555; 
+	color: #fff; 
+	text-align: center; 
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 2px;
+} 
+nav label {
+   position: absolute; 
+   top: 8px; 
+   right: 8px; 
+   transition: .4s;
+}
+nav label:hover {cursor:pointer;}
+nav label:before {
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;
+}
+
+/****** End Responsive NavBar ******/
+
+/****** Buttons Dekstop ******/
+
+.btn{
+    border: 2px solid grey;
+    margin-top: 40px;
+    color: grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    animation: fadeAndScale .2s ease-in;
+    font-size: 17px;
+}
+
+
+.btn:hover{
+    color: white;
+    transition: all 0.5s ease-in;
+    border: 2px solid white;
+}
+
+
+
+@keyframes fadeAndScale{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/****** End Buttons Dekstop ******/
+
+/****** About ******/
+
+.about {
+	padding:60px 0 60px 0;
+	background: #fff;
+}
+
+.about .text-center h2 {
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:30px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.about .text-center p {
+	margin-top:20px;
+	margin-bottom:10px;
+	color: grey;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+/****** End About ******/
+
+
+/****** Section Car ******/
+
+.action {
+  overflow: visible;
+  padding: 0px;
+  width: 100%;
+  background: #f2f2f2;
+  position: relative;
+}
+.action .left-text {
+  padding: 70px 0;
+  padding-right: 60px;
+  width: 50%;
+}
+.action .left-text h4 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.action .left-text p {
+  padding-top: 20px;
+}
+.action .left-text em {
+  font-size: 16px;
+  color: grey;
+  font-weight: 300;
+  font-style: normal;
+}
+.action .right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url("https://www.desktop-background.com/download/1366x768/2010/11/02/105009_download-wallpapers-nissan-skyline-gtr-gt-r-r34-v-spec-2-nur_1980x1263_h.jpg");
+}
+
+.action p{
+    color: grey;
+}
+
+/****** End Section Car ******/
+
+/****** Gallery ******/
+
+.gallery {
+	padding:50px;
+}
+.gallery p{
+    color: grey;
+    letter-spacing: 1px;
+}
+
+.gallery .text-center h2 {
+	text-transform:uppercase;
+	font-weight:550;
+	font-size:27px;
+	margin-bottom:30px;
+    font-weight: bold;
+}
+
+.gallery figure {
+	position: relative;	
+	margin-top:30px;
+	margin-bottom:30px;
+	background: #272727;
+	text-align: center;
+	cursor: pointer;
+}
+
+.gallery figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+
+.gallery figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gallery figure figcaption::before,
+.gallery figure figcaption::after {
+	pointer-events: none;
+}
+
+figure.effect-marley figcaption {
+	text-align: right;
+}
+
+figure.effect-marley h4,
+figure.effect-marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+	bottom: 30px;
+	color:#fff;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-marley h4 {
+	top: 30px;
+	color:#fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h4::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h4::after,
+figure.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h4::after,
+figure.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/****** End Gallery ******/
+
+
+/****** Footer ******/
+
+h2{
+    text-transform:uppercase;
+	font-weight:bold;
+	font-size:30px;
+    letter-spacing: 1px;
+}
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    margin: 5px;
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+section .p1{
+    color: grey;
+}
+hr{
+    margin: 0;
+}
+/****** End Footer ******/
+
+
+/***************** FONTS ********************/
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+
+/************* MEDIA QUERIES **************/
+
+
+@media only screen and (max-width: 1080px){
+   nav {
+        position: relative;
+   }
+	nav ul {
+	    transform: translateY(0);
+	    box-shadow: 0 0 5px rgba(0,0,0, .7);
+        transition: all .5s;
+        position: absolute;
+        width: 100%;
+	}
+	nav li {
+		flex: none; 
+		width: 100%;
+		border-bottom: solid 1px #777;
+	} 
+	nav input[type="checkbox"]:checked + ul  {
+		transform: translateY(-100%);
+		width: 100%;
+		background: #999;   
+        transition: all .5s;
+	}
+	nav label{
+        display: block;
+   }  
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #777; 
+		color: #fff;
+	}  
+}
+
+@media (max-width: 500px){
+    #fact{
+        display:none;
+    }
+}
+
+@media (max-width: 500px){
+    .about{
+        margin-bottom: 5px;
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 500px){
+    .row{
+    margin: 10px 0px;
+    }
+    .gallery p{
+        font-size: 19px;
+    }
+    section .p1{
+        font-size: 19px;
+    }
+    section h4{
+        padding-top: 8px;
+    }
+    header h1{
+        text-align: center;
+        font-size: 35px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }  
+}
+
+
+
+
+/************* END MEDIA QUERIES **************/
+
+
+
+
+
+
+
